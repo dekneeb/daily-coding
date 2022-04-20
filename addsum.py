@@ -18,3 +18,18 @@ def add_up(num):
 
 
 print(add_up(5))
+
+# add numbers in an array up to specified index; recursive
+
+def addingupto(a, b):
+
+    sum = a[b]
+
+    if b == 0:
+        return sum
+    else:
+        return sum + addingupto(a, b-1)
+
+
+
+print(addingupto([1, 2, 3, 4, 5], 2))
