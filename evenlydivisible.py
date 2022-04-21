@@ -1,6 +1,9 @@
 # method 1
 # print sum of all numbers from a to b that are divisible by c
 
+from re import I
+
+
 def evenly_divisible(a, b,c):
     arr = []
 
@@ -12,3 +15,10 @@ def evenly_divisible(a, b,c):
 
 print(evenly_divisible(1, 10 ,2))
 print(evenly_divisible(2, 16, 4))
+
+
+
+
+
+
+
