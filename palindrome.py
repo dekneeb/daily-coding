@@ -21,3 +21,16 @@ def palindrome(str):
 
 
 print(palindrome('abba'))
+
+
+# method 3 recursive
+def palindrome(str):
+    if len(str) < 1:
+        return True
+    for i in range(0, int(len(str))):
+        if str[i] != str[len(str) -1]:
+            return False
+        else:
+            return palindrome(str[1: len(str)-1])
+
+print(palindrome('racecar'))
