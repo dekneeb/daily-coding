@@ -7,7 +7,7 @@ def hamming_distance(w, x):
 
     for i in w:
         for j in x:
-            if i != x:
+            if i != j:
                 count =+ 1
 
     return count
