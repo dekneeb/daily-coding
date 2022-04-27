@@ -1,9 +1,17 @@
 def longestCommonPrefix(lst):
-    for i in lst:
-        if lst[i][0] == lst[i+1][0]:
-            print(i)
+    ans = ''
+    
+    n = len(min(lst))
+        
+    for i in range(n):
+        if all(x[i] == lst[0][i] for x in lst):
+            ans = ans + lst[0][i]
+        else:
+            break
+    return ans
+ 
 
 
-longestCommonPrefix(["flower", "flow", "flight"])
+print(longestCommonPrefix(["flower", "flow", "flight", "foo", "fingerlicking"]))
 
     
